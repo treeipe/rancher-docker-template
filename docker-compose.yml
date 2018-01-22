@@ -1,0 +1,10 @@
+version: "3"
+services:
+  rancher-server:
+    image: rancher/server:stable
+    container_name: rancher.treeipe.com
+    hostname: rancher.treeipe.com
+    privileged: true
+    restart: always
+    ports:
+      - "8080:8080"
